@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Videos</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap">
+	</head>
+	<style>
+		.btn{
+	border:none;
+	outline:none;
+	background: rgba(255, 0, 0, 0.637);
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	
+	width: auto;	
+	justify-content: center;
+		}	 
+	.slider{
+	margin:50px auto;
+	width:60%;
+	height: 70vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+ 
+.img-box video{
+	width:100%;
+}
+
+
+.btn:hover{
+	background: red;
+}
+	</style>
+	<body>
+		<nav>
+			<img class="logo" src="img/logo_spf.svg">
+			  <ul class="nav-links">
+			<li>
+			  <a href="index.html">Home</a>
+			</li>
+			<li>
+			  <a href="products.html">All Autos</a>
+			</li>
+			<li>
+			  <a href="Contact.html">Contact</a>
+			</li>
+			<li>
+			  <a href="about_us.html">About us</a>
+			</li>
+			<li>
+				<a href="videos.html">Videos</a>
+			  </li>
+		  </ul>
+		  <div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		  </div>
+		</nav>
+
+		<div class="slider">
+			<div class="img-box">
+				<video src="videos/video6.mp4"  class="slider-video" muted loop autoplay ></video>
+			</div>
+
+			<button class="btn" onclick="prev()">Prev</button>
+			<button class="btn" onclick="next()">Next</button>
+		</div>
+		<section>
+			<div class="footer">
+			  <div class="inner-footer">
+			  <div class="social-media">
+				<ul>
+					<li class="media-items"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+					<li class="media-items"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+					<li class="media-items"><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+					<li class="media-items"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li class="media-items"><a href="#"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			  </div>
+				<hr>
+				
+			<div class="outer-footer">
+			  Copyright &copy; SportsWagenFrühstück 2021 All Rights Reserved <a class="imp" href="impressum.html">Impressum</a>
+			</div>
+			</div>
+		  </section>
+		<script src="script.js"></script>
+
+	</body>
+</html>
